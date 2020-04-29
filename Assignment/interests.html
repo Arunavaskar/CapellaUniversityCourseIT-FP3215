@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Interests Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/cookie.js" charset="utf-8"></script>
+</head>
+
+<body onload="loadCookies()">
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="confirm.html">
+
+            <!--
+			Include other form fields here
+̥
+			-->
+          <label for="FatherFirstName">Father's First Name</label>
+          <input id="FatherFirstName" type="text" name="FatherFirstName">
+
+          <label for="FatherLastName">Father's Last Name</label>
+          <input id="FatherLastName" type="text" name="FatherLastName">
+
+          <label for="MotherFirstName">Mother's First Name</label>
+          <input id="MotherFirstName" type="text" name="MotherFirstName">
+
+          <label for="country">Enter your country name</label>
+          <input id="country" type="text" name="country">
+
+            <input type="hidden" id="userName" name="userName"/>
+            <input type="hidden" id="password" name="password"/>
+            <input type="hidden" id="passwordVerify" name="passwordVerify"/>
+            <input type="hidden" id="firstName" name="firstName"/>
+            <input type="hidden" id="lastName" name="lastName"/>
+            <input type="hidden" id="email" name="email"/>
+            <input type="hidden" id="phoneNumber" name="phoneNumber"/>
+
+
+
+            <input onclick="saveCookiesAgain()" id="submit" type="submit" value="Final Submission">
+        </form>
+    </section>
+    <footer>This events site is for IT-FP3215 tasks.
+    </footer>
+
+</body>
+
+</html>

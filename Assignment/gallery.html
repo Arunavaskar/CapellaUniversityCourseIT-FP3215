@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/script.js" charset="utf-8"></script>
+    <!-- using display type: none to hide the elemnt by default for hover revealing -->
+    <style media="screen">
+      .desc{
+        display: none;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html"  class="active">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="gallery">
+
+<div class="gallery">
+  <a target="_blank" href="images/firefighter.jpg">
+    <!-- added relative ID and mouse over and out events to call out relative functions from the script,js -->
+    <img id="img1" onmouseover = "hoverOn1()" onmouseout="hoverOut1()" src="images/firefighter.jpg" alt="firefighter" width="300" height="200">
+  </a>
+  <!-- added id names to these div elements for hidding and un-hidding them based on event calls -->
+  <div id="dsc1" class="desc" >this is image 1 and this is the description to this image coming up after hovering over the image!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/work.jpg">
+    <!-- added relative ID and mouse over and out events to call out relative functions from the script,js -->
+    <img id="img2" onmouseover = "hoverOn2()" onmouseout="hoverOut2()"  src="images/work.jpg" alt="work" width="300" height="200">
+  </a>
+  <!-- added id names to these div elements for hidding and un-hidding them based on event calls -->
+  <div id="dsc2" class="desc">this is image 2 and this is the description to this image coming up after hovering over the image!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/silhouette.jpg">
+    <!-- added relative ID and mouse over and out events to call out relative functions from the script,js -->
+    <img id="img3" onmouseover = "hoverOn3()" onmouseout="hoverOut3()"  src="images/silhouette.jpg" alt="silhouette" width="300" height="200">
+  </a>
+  <!-- added id names to these div elements for hidding and un-hidding them based on event calls -->
+  <div id="dsc3" class="desc">this is image 3 and this is the description to this image coming up after hovering over the image!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/event.jpg">
+    <!-- added relative ID and mouse over and out events to call out relative functions from the script,js -->
+    <img id="img4" onmouseover = "hoverOn4()" onmouseout="hoverOut4()"  src="images/event.jpg" alt="event" width="300" height="200">
+  </a>
+  <!-- added id names to these div elements for hidding and un-hidding them based on event calls -->
+  <div id="dsc4" class="desc">this is image 3 and this is the description to this image coming up after hovering over the image!</div>
+</div>
+
+    </section>
+
+
+
+    <footer>This events site is for IT-FP3215 tasks.
+    </footer>
+</body>
+
+</html>

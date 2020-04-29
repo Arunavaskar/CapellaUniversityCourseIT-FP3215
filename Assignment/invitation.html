@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html" class="active">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="#">
+            <label id="LabelnumberOfVolunteer" for="numberOfVolunteer">Number Of Volunteer</label>
+            <input id="numberOfVolunteer" type="text" name="numberOfVolunteer" placeholder="Enter the number of Volunteer(in Numeric Value)">
+            <input id="submit" type="button" value="Submit" onclick=sub()>
+        </form>
+    </section>
+
+
+    <article id="placeholderContent">
+        Hello <span id="rn">recipientName</span>!
+        <br/>
+        <br/> You have been invited to volunteer for an event held by <span id="on">organizationName</span>
+         on <span id="ed">eventDate</span>. Please come to the following website:
+          <span id="wu">websiteURL</span> to sign up as a volunteer.
+        <br/>
+        <br/> Thanks!
+        <br/>
+        <br/>
+        <span id="hn">hostName</span>
+    </article>
+    <footer id="footer">This events site is for IT-FP3215 tasks.
+    </footer>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+
+</html>

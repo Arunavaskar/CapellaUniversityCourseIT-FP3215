@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/script2.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form onsubmit="return validate()"
+         action="confirm.html">
+            <label for="userName">Username:</label>
+            <input id="userName" type="text" name="userName" placeholder="Enter your Username"/>
+            <label id="userNameLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+            <label for="Password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Enter your Password"/>
+            <label id="passwordLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+            <label for="passwordVerify">Verify your Password:</label>
+            <input id="passwordVerify" type="password" name="passwordVerify" placeholder="Enter in your Password again"/>
+            <label id="passwordVerifyLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" name="firstName" placeholder="Enter your First Name"/>
+            <label id="firstNameLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+            <label for="hostName">Last Name:</label>
+            <input id="lastName" type="text" name="lastName" placeholder="Enter your Last Name"/>
+            <label id="lastNameLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Enter your Email Address"/>
+            <label id="emailLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+			      <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" type="text" name="lastName" placeholder="Enter your Phone Number"/>
+            <label id="phoneNumberLabel" style="color: red; visibility: hidden;">Invalid!</label>
+            <hr>
+			      <label for="signUpNewsletter">Sign up for newsletter:</label>
+			      <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes
+				    <input type="radio" name="signUpNewsletter" value="No"> No
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>This events site is for IT-FP3215 tasks.
+    </footer>
+</body>
+
+</html>

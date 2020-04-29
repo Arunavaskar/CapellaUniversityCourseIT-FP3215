@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Interests Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/cookie.js" charset="utf-8"></script>
+</head>
+
+<body onload="loadCookiesAgain()">
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageFormContent">
+
+            <!--
+			Process content to display content on screen
+
+			-->
+      <p>This is a paragraph generated on the basis of the Inputs you have given.</p>
+      <p>those inputs were saved in cookie from the registration page.</p>
+      <p>then again further details were saved in cookies in next step.</p>
+      <p>Here is the paragraph generated on the basis of your inputs:- </p><br><br>
+
+      <p>
+        Your father's name is <section id="FatherFirstName"></section><section id="FatherLastName"></section>and your mother is<section id="MotherFirstName"></section>.
+      </p>
+
+      <p>
+        You are <section id="firstName"></section> <section id="lastName"></section> and you live in <section id="country"></section>. You've selected "
+      <section id="userName"></section>" as your user name.
+      </p>
+      <p>
+        your mail id is <section id="email"></section>.
+        your phone number is <section id="phoneNumber"></section>,
+      </p>
+    </section>
+
+    <footer>This events site is for IT-FP3215 tasks.
+    </footer>
+</body>
+
+</html>
